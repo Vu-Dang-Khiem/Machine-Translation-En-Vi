@@ -1,0 +1,11 @@
+torch>=2.0.0
+sentencepiece>=0.1.99
+sacrebleu>=2.3.1
+nltk>=3.8
+datasets>=2.14.0
+tokenizers>=0.13.0
+tqdm>=4.65.0
+gradio>=4.0.0
+matplotlib>=3.7.0
+PyPDF2>=3.0.0
+python-docx>=0.8.11
