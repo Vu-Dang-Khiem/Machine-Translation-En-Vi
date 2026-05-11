@@ -135,8 +135,8 @@ Machine Translation/
 ### 1. Installation
 
 ```bash
-git clone https://github.com/<your-username>/Machine-Translation-EN-VI.git
-cd Machine-Translation-EN-VI
+git clone https://github.com/Vu-Dang-Khiem/Machine-Translation-En-Vi.git
+cd Machine-Translation-En-Vi
 
 pip install -r requirements.txt
 ```
