@@ -93,3 +93,10 @@ __results___files/
 # HuggingFace config
 # ============================================================
 __huggingface_repos__.json
+
+# ============================================================
+# Human Evaluation (generated data — scripts are tracked)
+# ============================================================
+human_evaluation/eval_samples.json
+human_evaluation/annotations/
+human_evaluation/human_eval_results.json

@@ -31,6 +31,19 @@
 
 > The Transformer model achieves **+22 BLEU** improvement over the Bi-LSTM baseline.
 
+### 🧑‍🔬 Human Evaluation
+
+Human evaluation với **Adequacy** (đầy đủ nghĩa) và **Fluency** (trôi chảy), thang điểm 1-5:
+
+| Metric | Score |
+|--------|-------|
+| **Adequacy** (1-5) | *Pending* |
+| **Fluency** (1-5) | *Pending* |
+| **Overall** (1-5) | *Pending* |
+
+> 100 random test samples, stratified by sentence length.
+> Run `python human_evaluation/sample_for_eval.py` to generate samples, then use `human_eval_interface.py` to annotate.
+
 ---
 
 ## 🏗️ Architecture
@@ -105,6 +118,14 @@ Machine Translation/
 │   ├── train_baseline.py               #    Training script
 │   ├── evaluate_baseline.py            #    Evaluation script
 │   └── README.md                       #    Baseline documentation
+│
+├── human_evaluation/                   # 🧑‍🔬 Human Evaluation
+│   ├── sample_for_eval.py              #    Sample 100 câu từ test set
+│   ├── human_eval_interface.py         #    Gradio UI cho annotator chấm điểm
+│   ├── analyze_human_eval.py           #    Phân tích kết quả + Cohen's Kappa
+│   ├── eval_samples.json               #    Câu đã sample (generated)
+│   ├── annotations/                    #    Annotations từ các annotator
+│   └── human_eval_results.json         #    Kết quả tổng hợp (generated)
 │
 ├── training_Transformer.py             # 📓 Kaggle training script (EN→VI)
 ├── training_Transformer_vi2en.py       # 📓 Kaggle training script (VI→EN)
